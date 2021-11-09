@@ -1,0 +1,14 @@
+.wrapper-carts-list {
+    height: 495px;
+    margin-top: 100px;
+    background: url("./img/Mask Group.jpg") center center/cover no-repeat;
+}
+.text-carts-list {
+    margin-top: 80px;
+    font-family: Merienda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #000000;
+}

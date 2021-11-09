@@ -1,0 +1,22 @@
+.wrapper-info {
+    width: 589px;
+    margin: 0 auto;
+}
+.title-info {
+    margin: 80px auto 40px auto;
+    text-align: center;
+    font-family: Merienda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #000000;
+}
+.text-infos {
+    margin-bottom: 10px;
+    font-family: Merienda;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+}
