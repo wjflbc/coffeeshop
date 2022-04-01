@@ -1,6 +1,6 @@
 import {Image, Nav} from "react-bootstrap";
 import coffeebeans from "./img/beansdark.png";
-
+import './footer-items.css';
 
 const FooterItems = () => {
     return (
@@ -9,13 +9,13 @@ const FooterItems = () => {
                 <Image className='header-item-img' src={coffeebeans} alt='logo coffee beans'/>
             </Nav.Item>
             <Nav.Item as="li">
-                <Nav.Link href="/home" className='text-dark'>Coffee house</Nav.Link>
+                <Nav.Link href="/home" className='text-dark link'>Coffee house</Nav.Link>
             </Nav.Item>
             <Nav.Item as="li">
-                <Nav.Link eventKey="link-1" className='text-dark'>Our coffee</Nav.Link>
+                <Nav.Link eventKey="link-1" className='text-dark link'>Our coffee</Nav.Link>
             </Nav.Item>
             <Nav.Item as="li">
-                <Nav.Link eventKey="link-2" className='text-dark'>For your pleasure</Nav.Link>
+                <Nav.Link eventKey="link-2" className='text-dark link'>For your pleasure</Nav.Link>
             </Nav.Item>
         </>
     )

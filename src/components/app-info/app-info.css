@@ -1,11 +1,10 @@
 .wrapper-info {
-    width: 589px;
+    width: 50vw;
     margin: 0 auto;
 }
 .title-info {
     margin: 80px auto 40px auto;
     text-align: center;
-    font-family: Merienda;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -13,7 +12,6 @@
 }
 .text-infos {
     margin-bottom: 10px;
-    font-family: Merienda;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

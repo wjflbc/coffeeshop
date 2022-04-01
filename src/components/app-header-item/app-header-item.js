@@ -1,23 +1,20 @@
 
-import {Nav, Image} from "react-bootstrap";
-import coffeebeanstwo from './img/coffeebeanstwo.png';
+import {Nav} from "react-bootstrap";
+import {Link} from 'react-router-dom';
 
 import './app-header-item.css';
 
 const AppHeaderItem = () => {
     return (
         <>
-            <Nav.Item as="li">
-                <Image className='header-item-img' src={coffeebeanstwo} alt='logo coffee beans'/>
-            </Nav.Item>
                 <Nav.Item as="li">
-                    <Nav.Link href="/home" className='text-white'>Coffee house</Nav.Link>
+                    <Link to='/' className='nav-links'>Coffee house</Link>
                 </Nav.Item>
                 <Nav.Item as="li">
-                    <Nav.Link eventKey="link-1" className='text-white'>Our coffee</Nav.Link>
+                    <Link to='/coffee'  className='nav-links'>Our coffee</Link>
                 </Nav.Item>
                 <Nav.Item as="li">
-                    <Nav.Link eventKey="link-2" className='text-white'>For your pleasure</Nav.Link>
+                    <Link to='/' className='nav-links'>For your pleasure</Link>
                 </Nav.Item>
         </>
     )

@@ -10,7 +10,7 @@ const AppHeader = () => {
             <Container>
                 <Row>
                     <Col>
-                        <Nav defaultActiveKey="/home" as="ul">
+                        <Nav  as="ul">
                             <AppHeaderItem/>
                         </Nav>
                         <h2 className='title'>Everything You Love About Coffee</h2>

@@ -20,7 +20,7 @@ class SearchPanel extends Component{
 
     render() {
         return (
-            <div>
+            <div className='search'>
                 <div className='search-title'>Lookiing for</div>
                 <input
                     type='text'

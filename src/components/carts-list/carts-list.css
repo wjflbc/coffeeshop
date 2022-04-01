@@ -5,10 +5,15 @@
 }
 .text-carts-list {
     margin-top: 80px;
-    font-family: Merienda;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     text-align: center;
     color: #000000;
+}
+
+@media (max-width: 576px) {
+    .wrapper-carts-list {
+        display: none;
+    }
 }

@@ -30,8 +30,8 @@ class Filter extends Component{
         })
         return (
             <>
-                <div className='btn-group'>
-                    <div className='filter-title'>Or filter</div>
+                <div className='btn-groups'>
+                    <div className='filter-title'>Filter</div>
                     {buttons}
                 </div>
             </>

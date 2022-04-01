@@ -2,10 +2,15 @@
     background: url("./img/Main bg.jpg") center center/cover no-repeat;
     height: 640px;
 }
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
 .title {
     margin-top: 110px;
     text-align: center;
-    font-family: Merienda;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -15,7 +20,6 @@
 .subtitle {
     margin-top: 50px;
     text-align: center;
-    font-family: Merienda;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -25,7 +29,6 @@
     margin-top: 20px;
     margin-bottom: 18px;
     text-align: center;
-    font-family: Merienda;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -42,4 +45,5 @@
     margin: 0 auto;
 
 }
+
 

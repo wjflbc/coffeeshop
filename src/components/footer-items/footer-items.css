@@ -1,1 +1,9 @@
 
+@media (max-width: 576px) {
+    .link {
+        margin: 0;
+    }
+    .header-item-img {
+        display: none;
+    }
+}

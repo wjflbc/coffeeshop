@@ -4,3 +4,13 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+@media (max-width: 540px) {
+    .app-filter-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+}
+

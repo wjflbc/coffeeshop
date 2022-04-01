@@ -2,14 +2,14 @@
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
-    flex-wrap: wrap;
+
 }
 .cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 220px;
+    width: 20vw;
     height: 240px;
     background: rgba(255, 255, 255, 0.65);
     border-radius: 8px;
@@ -20,8 +20,7 @@
     align-items: end;
     padding: 0;
 }
-.cards-title .h5 {
-    font-family: Merienda;
+.cards-title {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -37,5 +36,24 @@
     color: #000000;
 }
 .cards-img {
-    width: 167px;
+    width: 15vw;
+}
+
+@media (max-width: 992px) {
+    .cards {
+        height: 180px;
+    }
+    .cards-title {
+        font-size: 10px;
+    }
+
+}
+@media (max-width: 768px) {
+    .cards {
+        height: 140px;
+    }
+    .cards-title {
+        font-size: 8px;
+    }
+
 }

@@ -1,7 +1,11 @@
+.search {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+}
 .search-title {
-    display: inline-block;
     margin-right: 20px;
-    font-family: Merienda;
+    margin-top: 5px;
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
@@ -15,4 +19,11 @@
     border-radius: 4px;
     border: none;
 
+}
+
+@media (max-width: 576px) {
+    .search-title {
+        font-size: 13px;
+        margin-top: 5px;
+    }
 }
