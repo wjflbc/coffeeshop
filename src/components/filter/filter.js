@@ -1,10 +1,10 @@
-import {Component} from "react";
+
 
 import './filter.css'
 
-class Filter extends Component{
+const Filter = (props) => {
 
-    buttons = [
+   let buttons = [
         {name: 'Brazil', label: 'Brazil'},
         {name: 'Kenya', label: 'Kenya'},
         {name: 'Columbia', label: 'Columbia'},
@@ -12,31 +12,28 @@ class Filter extends Component{
     ]
 
 
-
-    render() {
-        const {filter, onFilterChange}= this.props;
-        const buttons = this.buttons.map(({name, label}) => {
-            const active = filter === name;
-            const clazz = active ? 'btn-secondary' : '';
-            return (
-                <button
-                    className={`btn ${clazz} `}
-                    type='button'
-                    key={name}
-                    onClick={() => onFilterChange(name)}>
-                    {label}
-                </button>
-            )
-        })
+    const {filter, onFilterChange}= props;
+    const button = buttons.map(({name, label}) => {
+        const active = filter === name;
+        const clazz = active ? 'btn-secondary' : '';
         return (
-            <>
-                <div className='btn-groups'>
-                    <div className='filter-title'>Filter</div>
-                    {buttons}
-                </div>
-            </>
+            <button
+                className={`btn ${clazz} `}
+                type='button'
+                key={name}
+                onClick={() => onFilterChange(name)}>
+                {label}
+            </button>
         )
-    }
+    })
+    return (
+        <>
+            <div className='btn-groups'>
+                <div className='filter-title'>Filter</div>
+                {button}
+            </div>
+        </>
+    )
 }
 
 export default Filter;

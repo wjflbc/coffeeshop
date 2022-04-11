@@ -1,6 +1,6 @@
 import {Col, Container,Row} from "react-bootstrap";
 import coffee from './img/coffee.jpg';
-import firstclass from './img/firstclass.jpg';
+import firstclas from './img/firstclass.jpg';
 import packages from './img/packages.jpg';
 
 import './carts-list-item.css'
@@ -20,7 +20,7 @@ const CartsListItem = () => {
                                </div>
                            </div>
                            <div className='cards' >
-                               <img className='cards-img' src={firstclass} />
+                               <img className='cards-img' src={firstclas} />
                                <div className='cards-body'>
                                    <div className='cards-title'>Presto Coffee Beans 1 kg</div>
                                    <div className='cards-text'>15.93$</div>

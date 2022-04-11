@@ -4,8 +4,6 @@ import Item from "../item/item";
 
 
 
-
-
 const SecondPage = () => {
     return (
         <>
