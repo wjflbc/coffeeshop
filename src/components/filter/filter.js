@@ -1,18 +1,15 @@
 
-
 import './filter.css'
 
-const Filter = (props) => {
+
+const Filter = ({filter, onFilterChange}) => {
 
    let buttons = [
         {name: 'Brazil', label: 'Brazil'},
         {name: 'Kenya', label: 'Kenya'},
-        {name: 'Columbia', label: 'Columbia'},
-        {name: 'All', label: 'All'}
+        {name: 'Columbia', label: 'Columbia'}
     ]
 
-
-    const {filter, onFilterChange}= props;
     const button = buttons.map(({name, label}) => {
         const active = filter === name;
         const clazz = active ? 'btn-secondary' : '';
@@ -21,7 +18,9 @@ const Filter = (props) => {
                 className={`btn ${clazz} `}
                 type='button'
                 key={name}
-                onClick={() => onFilterChange(name)}>
+                onClick={
+                    () => onFilterChange(name)
+                }>
                 {label}
             </button>
         )

@@ -3,8 +3,7 @@ import ShopListItem from "../shop-list-items/shop-list-items";
 
 import './shop-list.css'
 
-const ShopList = () => {
-
+const ShopList = ({data}) => {
 
     return (
         <div className='shop-list-wrapper'>
@@ -12,7 +11,8 @@ const ShopList = () => {
                 <Row>
                     <Col>
                         <ul className='shop-list'>
-                            <ShopListItem />
+                            <ShopListItem
+                            data={data}/>
                         </ul>
                     </Col>
                 </Row>

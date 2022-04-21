@@ -3,18 +3,23 @@ import SearchPanel from "../search-panel/search-panel";
 import Filter from "../filter/filter";
 
 import './app-filter.css'
+import {useState} from "react";
 
 
-const AppFilter = ({onUpdateSearch, filter, onFilterChange}) => {
+
+const AppFilter = ({onFilterChange, filter, updateSearch}) => {
+
     return (
         <Container>
             <Row>
                 <Col>
                     <div className='app-filter-items'>
-                        <SearchPanel onUpdateSearch={onUpdateSearch}/>
+                        <SearchPanel
+                            updateSearch={updateSearch}/>
                         <Filter
+                            onFilterChange={onFilterChange}
                             filter={filter}
-                            onFilterChange={onFilterChange}/>
+                        />
                     </div>
                 </Col>
             </Row>
