@@ -7,7 +7,8 @@ const Filter = ({filter, onFilterChange}) => {
    let buttons = [
         {name: 'Brazil', label: 'Brazil'},
         {name: 'Kenya', label: 'Kenya'},
-        {name: 'Columbia', label: 'Columbia'}
+        {name: 'Columbia', label: 'Columbia'},
+        {name: 'All', label: 'All'}
     ]
 
     const button = buttons.map(({name, label}) => {

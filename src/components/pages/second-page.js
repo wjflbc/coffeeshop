@@ -38,7 +38,20 @@ const SecondPage = () => {
         setTerm(term);
     }
 
-    const visibleData = searchItem(desc, term);
+   function filterItems(items, filter) {
+        switch (filter) {
+            case 'Brazil':
+                return items.filter(item => (item.country === 'Brazil'));
+            case 'Columbia':
+                return items.filter(item => (item.country === 'Columbia'));
+            case 'Kenya':
+                return items.filter(item => (item.country === 'Kenya'));
+            default:
+                return items
+        }
+   }
+
+    const visibleData = filterItems(searchItem(desc, term), filter);
     return (
         <>
             <AppFilter
